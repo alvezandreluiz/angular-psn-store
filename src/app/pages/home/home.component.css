@@ -1,0 +1,58 @@
+.home__container{
+    position: relative;
+    width: 90%;
+    margin: auto;
+    padding-top: 50px;
+    display: flex;
+    min-height: 95vh;
+
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.mySwiper > swiper-slide{
+    transition: filter .3s ease, outline .1s ease;
+}
+
+.mySwiper > swiper-slide > a{
+    display: flex;
+}
+
+.mySwiper > swiper-slide > a >img{
+    border-radius: 10px;
+    margin: 5px;
+}
+
+.mySwiper > swiper-slide > a >span{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #0d0d0daa;
+    color: white;
+    border: solid white 1px;
+    font-size: 12px;
+    font-family: 'Segoe UI';
+    font-weight: bold;
+    height: 18px;
+    padding: 0px 5px;
+    top: 212px;
+    left: 10px;
+}
+
+.mySwiper > swiper-slide > a >img:hover,
+.mySwiper > swiper-slide.hover > a >img{
+    filter: brightness(0.7);
+    outline: solid #CCC 3px;
+    outline-offset: 3px;
+    border-radius: 10px;
+}
+
+.mySwiper > swiper-slide > div > span{
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    font-family: 'Segoe UI';
+    font-size: 19px;
+}

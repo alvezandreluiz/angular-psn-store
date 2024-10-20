@@ -1,0 +1,25 @@
+.card__container{
+    position: relative;
+    border-radius: 10px;
+    width: 250px;
+    height: 350px;
+
+    display: flex;
+    overflow: hidden;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    
+    transition: filter .3s ease, outline .1s ease;
+}
+
+.card__container:hover{
+    filter: brightness(0.7);
+    outline: solid #CCC 3px;
+    outline-offset: 3px;
+    border-radius: 10px;
+}
+
+.card__img{
+    min-width: 100%;
+    min-height: 100%;
+}
